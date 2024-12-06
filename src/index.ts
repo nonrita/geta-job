@@ -1,6 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 import router from './router';
+import listEndpoints from 'express-list-endpoints';
+import chalk from 'chalk';
+import { printEndpoints } from './util/printEndpoints';
 
 const app: express.Express = express();
 
@@ -11,4 +14,5 @@ app.use(router);
 
 app.listen(3001, () => {
   console.log('Start on port 3001.');
+  printEndpoints(app);
 });
