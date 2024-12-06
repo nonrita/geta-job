@@ -9,6 +9,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(router);
+app.get('/', (req, res) => {
+  res.status(201).json({
+    creater: 'natanuki (ken)',
+    explanation: 'this is api of geta-job application',
+  });
+});
 
 app.listen(3001, () => {
   console.log('Start on port 3001.');
