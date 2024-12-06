@@ -7,8 +7,8 @@ const printEndpoints = (app: Express) => {
   endpoints.forEach((endpoint) => {
     console.log(
       chalk.green(endpoint.path) +
-        ':' +
-        chalk.blue(` [ ${endpoint.methods.join(', ')} ]`)
+        ' - ' +
+        chalk.blue(`[ ${endpoint.methods.join(', ')} ]`)
     );
   });
 };
