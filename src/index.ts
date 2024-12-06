@@ -1,8 +1,6 @@
 import express from 'express';
 import cors from 'cors';
 import router from './router';
-import listEndpoints from 'express-list-endpoints';
-import chalk from 'chalk';
 import { printEndpoints } from './util/printEndpoints';
 
 const app: express.Express = express();
