@@ -12,6 +12,5 @@
       "dest": "/dist/index.js",
       "methods": ["GET", "POST"]
     }
-  ],
-  "buildCommand": "npm run build"
+  ]
 }
